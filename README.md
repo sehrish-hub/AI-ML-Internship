@@ -7,7 +7,8 @@ It includes tasks on data exploration, visualization, regression, classification
 Each task contains:  
 - Python script (`.py`)  
 - Dataset (or dataset link if too large)  
-- Output plots saved in `outputs/` folder  
+- Output plots saved in `outputs/` folder
+- heart.csv file
 - README-style markdown summary with objectives, steps, models, and results  
 
 ---
@@ -17,19 +18,20 @@ Each task contains:
 
 AI-ML-Internship-Tasks/
 │
-├── Task-1_Iris_Exploration/
-│ ├── iris_exploration.py
+├── Task-1_Iris_Dataset/
+│ ├── main.py
+│ ├── outputs/
+│ └── README.md
+│  
+├── Task-2_Stock_Price_Prediction/
+│ ├── main.py
 │ ├── outputs/
 │ └── README.md
 │
-├── Task-2_Stock_Prediction/
-│ ├── stock_prediction.py
+├── Task-3_Heart_Disease_Prediction/
+│ ├── main.py
 │ ├── outputs/
-│ └── README.md
-│
-├── Task-3_Heart_Disease/
-│ ├── heart_disease_prediction.py
-│ ├── outputs/
+│ └── heart.csv
 │ └── README.md
 │
 ├── Task-4_...
@@ -122,7 +124,7 @@ git clone https://github.com/<your-username>/AI-ML-Internship-Tasks.git
 
 Navigate to the task folder
 
-cd Task-1_Iris_Exploration
+cd Task-1_Iris_Dataset
 
 
 Create virtual environment (optional but recommended)
@@ -146,7 +148,7 @@ pip install -r requirements.txt
 
 Run Python script
 
-python iris_exploration.py
+python main.py
 
 
 Repeat for other tasks using their respective .py files.
