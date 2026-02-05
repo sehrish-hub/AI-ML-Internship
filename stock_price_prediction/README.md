@@ -1,4 +1,4 @@
-# 📈 Stock Price Prediction 
+# 📈 Task 2: Stock Price Prediction 
 
 ## 🎯 Objective
 Use historical stock data to predict the next day's closing price using Python and machine learning.
@@ -94,5 +94,3 @@ To switch stock, change the stock_symbol variable in main.py:
 
 stock_symbol = "TSLA"  # Tesla
 stock_symbol = "GOOGL" # Google
-
-
