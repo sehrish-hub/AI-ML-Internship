@@ -94,3 +94,4 @@ To switch stock, change the stock_symbol variable in main.py:
 
 stock_symbol = "TSLA"  # Tesla
 stock_symbol = "GOOGL" # Google
+
