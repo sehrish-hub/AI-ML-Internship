@@ -1,157 +1,157 @@
-AI-ML-Internship-Tasks
-📌 Overview
+# AI-ML-Internship-Tasks
 
-This repository contains my AI/ML internship projects.
-It includes tasks on data exploration, visualization, regression, classification, and other ML concepts.
+## 📌 Overview
+This repository contains my completed AI/ML internship projects.  
+It includes tasks on data exploration, visualization, regression, classification, and other machine learning concepts.
 
-Each task has:
+Each task contains:  
+- Python script (`.py`)  
+- Dataset (or dataset link if too large)  
+- Output plots saved in `outputs/` folder  
+- README-style markdown summary with objectives, steps, models, and results  
 
-Python script (.py)
+---
 
-Dataset (or dataset link if too large)
+## 📂 Folder Structure
 
-Output plots saved in outputs/ folder
 
-README-style markdown summary with objectives, steps, models, and results
-
-📂 Folder Structure
 AI-ML-Internship-Tasks/
 │
 ├── Task-1_Iris_Exploration/
-│   ├── iris_exploration.py
-│   ├── outputs/
-│   └── README.md
+│ ├── iris_exploration.py
+│ ├── outputs/
+│ └── README.md
 │
 ├── Task-2_Stock_Prediction/
-│   ├── stock_prediction.py
-│   ├── outputs/
-│   └── README.md
+│ ├── stock_prediction.py
+│ ├── outputs/
+│ └── README.md
 │
 ├── Task-3_Heart_Disease/
-│   ├── heart_disease_prediction.py
-│   ├── outputs/
-│   └── README.md
+│ ├── heart_disease_prediction.py
+│ ├── outputs/
+│ └── README.md
 │
 ├── Task-4_...
 ├── Task-5_...
 └── Task-6_...
 
-🛠 Tools & Libraries
 
-Python 3.x
+---
 
-Pandas, NumPy
+## 🛠 Tools & Libraries
+- Python 3.x  
+- Pandas, NumPy  
+- Matplotlib, Seaborn  
+- Scikit-learn  
+- yfinance (for stock prediction)
 
-Matplotlib, Seaborn
+---
 
-Scikit-learn
+## 📋 Tasks Summary
 
-yfinance (for stock prediction)
+### Task 1 – Iris Dataset Exploration & Visualization
+**Objective:** Explore, analyze, and visualize the Iris dataset to understand feature distributions and relationships.  
 
-📋 Tasks Summary
-Task 1 – Iris Dataset Exploration & Visualization
+**Key Steps:**  
+- Load dataset (`seaborn.load_dataset("iris")`)  
+- Inspect dataset (`.head()`, `.info()`, `.describe()`)  
+- Visualize:  
+  - Scatter plot → Sepal relationships  
+  - Histogram → Feature distributions  
+  - Box plot → Outlier detection  
+- Save plots in `outputs/` folder  
 
-Objective: Explore, analyze, and visualize the Iris dataset to understand feature distributions and relationships.
+**Insights:**  
+- Setosa species is clearly separable from others  
+- Petal features are strong predictors for classification  
 
-Key Steps:
+---
 
-Load dataset (seaborn.load_dataset("iris"))
+### Task 2 – Stock Price Prediction
+**Objective:** Predict next-day stock closing price using historical data.  
 
-Inspect dataset (.head(), .info(), .describe())
+**Key Steps:**  
+- Load historical stock data using `yfinance`  
+- Prepare features: Open, High, Low, Volume  
+- Create target: Next-day Close price  
+- Train Linear Regression model  
+- Evaluate predictions with Mean Absolute Error (MAE)  
+- Plot actual vs predicted prices and save in `outputs/` folder  
 
-Visualize:
+**Insights:**  
+- Model captures general price trends  
+- Minor deviations occur during high volatility periods  
 
-Scatter plot → Sepal relationships
+---
 
-Histogram → Feature distributions
+### Task 3 – Heart Disease Prediction
+**Objective:** Predict risk of heart disease using patient health data.  
 
-Box plot → Outliers detection
+**Key Steps:**  
+- Load dataset (`heart.csv`)  
+- Handle missing values:  
+  - Numeric → median  
+  - Categorical → mode  
+- Encode categorical features using LabelEncoder  
+- Create binary target column (`target`) from original `num` column  
+- Perform EDA:  
+  - Target distribution plot  
+  - Correlation heatmap  
+- Split dataset into training and testing sets  
+- Train Logistic Regression model  
+- Evaluate model:  
+  - Accuracy  
+  - Confusion Matrix  
+  - ROC-AUC score  
+- Visualize ROC curve & feature importance  
 
-Save plots in outputs/ folder
+**Insights:**  
+- Accuracy ~0.80  
+- ROC-AUC ~0.87  
+- Key features: cp, thal, ca, oldpeak  
 
-Insights: Setosa is clearly separable; Petal features are strong predictors.
+---
 
-Task 2 – Stock Price Prediction
+## 🚀 How to Run
 
-Objective: Predict next-day stock closing price using historical data.
-
-Key Steps:
-
-Load historical stock data using yfinance
-
-Prepare features: Open, High, Low, Volume
-
-Create target: Next-day Close price
-
-Train Linear Regression model
-
-Evaluate with MAE
-
-Plot actual vs predicted prices and save in outputs/
-
-Insights: Model captures general trend; minor deviations during high volatility.
-
-Task 3 – Heart Disease Prediction
-
-Objective: Predict risk of heart disease using patient health data.
-
-Key Steps:
-
-Load dataset (heart.csv)
-
-Handle missing values (median for numeric, mode for categorical)
-
-Encode categorical features using LabelEncoder
-
-Create binary target column (target)
-
-EDA: Target distribution, Correlation heatmap
-
-Train Logistic Regression model
-
-Evaluate: Accuracy, Confusion Matrix, ROC-AUC score
-
-Visualize ROC curve & Feature importance
-
-Insights: Accuracy ~0.80, ROC-AUC ~0.87; Key features: cp, thal, ca, oldpeak
-
-🚀 How to Run
-
-Clone repository:
-
+1. **Clone repository**
+```bash
 git clone https://github.com/<your-username>/AI-ML-Internship-Tasks.git
 
 
-Navigate to the task folder:
+Navigate to the task folder
 
 cd Task-1_Iris_Exploration
 
 
-Create virtual environment (optional but recommended):
+Create virtual environment (optional but recommended)
 
 python -m venv .venv
 
 
-Activate environment:
+Activate environment
 
-Windows: .venv\Scripts\activate
+# Windows
+.venv\Scripts\activate
 
-Linux/WSL: source .venv/bin/activate
+# Linux / WSL
+source .venv/bin/activate
 
-Install dependencies:
+
+Install dependencies
 
 pip install -r requirements.txt
 
 
-Run the Python script:
+Run Python script
 
 python iris_exploration.py
 
 
-(Repeat for other tasks using respective .py files)
+Repeat for other tasks using their respective .py files.
 
 👩‍💻 Author
 
 Sehrish Shafiq
-
 LinkedIn: https://www.linkedin.com/in/sehrish-shafiq
